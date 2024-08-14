@@ -1,0 +1,53 @@
+.header {
+  padding-top: 40px;
+  padding-bottom: 151px;
+
+  &__logo {
+    max-width: 116px;
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list {
+    display: none;
+  }
+  &__link {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 131%;
+    letter-spacing: 0.12em;
+    color: #828282;
+  }
+  &__btn {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 131%;
+    letter-spacing: 0.12em;
+    color: #fff;
+    padding: 20px 26px;
+    border-radius: 10px;
+    background-color: $gray;
+  }
+
+  @media screen and (min-width: 786px) {
+    &__list {
+      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 41px;
+    }
+    &__menu {
+      display: none;
+    }
+    &__block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
